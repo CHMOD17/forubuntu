@@ -1,0 +1,373 @@
+# -------------------EXCEPTIONS ----------------------------
+try:
+
+
+
+#-------------------ESTADO DE RESULTADOS ----------------------
+
+#Estado de Resultados
+    print("""
+    ESTADO DE RESULTADOS: 
+    """)
+    ventas = int(input('Ventas: '))
+    costo_de_los_bienes_vendidos = int(input('Costo de los bienes vendidos: '))
+    utilidad_bruta = ventas - costo_de_los_bienes_vendidos
+    print(f'''
+    Utilidad Bruta: {utilidad_bruta}''')
+
+    print('''
+Gastos Operativos: ''')
+    gastos_de_ventas = int(input('Gastos de Ventas: '))
+    gastos_de_desarrollo_e_investigacion = int(input('Gastos de Desarrollo e Investigación: '))
+    gastos_generales_y_administrativos = int(input('Gastos Generales y Administrativos: '))
+    gastos_por_arrendamiento = int(input('Gastos por Arrendamiento: '))
+    gastos_por_depreciacion = int(input('Gastos por Depreciacion: '))
+    gastos_operativos_totales = gastos_de_ventas + gastos_por_depreciacion + gastos_por_arrendamiento + gastos_generales_y_administrativos
+    print(f'Gastos Operativos Totales: {gastos_operativos_totales}')
+
+
+    utilidad_operativa = utilidad_bruta - gastos_operativos_totales
+    print(f'''
+Utilidad Operativa: {utilidad_operativa}''')
+
+    otros_ingresos_o_gastos_netos = int(input('Otros ingresos/Gastos netos: '))
+
+    gastos_por_intereses = int(input('Gastos por intereses: '))
+    utilidad_neta_antes_de_impuestos = utilidad_operativa - gastos_por_intereses
+    print(f'''
+Utilidad Neta Antes de Impuestos: {utilidad_neta_antes_de_impuestos}''')
+
+    impuestos = int(input('Impuestos: '))
+    utilidad_neta_despues_de_impuestos = utilidad_neta_antes_de_impuestos - impuestos
+    print(f'''
+Utilidad Neta Despues de Impuestos: {utilidad_neta_despues_de_impuestos}''')
+
+    dividendos_para_accionistas_preferentes = int(input('Dividendos para Accionistas Preferentes: '))
+    ganancias_disponibles_para_accionistas_comunes = int(input('Ganancias Diponibles para accionistas comunes: '))
+
+
+    #------------------------------------BALANCE GENERAL -----------------------------------------------
+
+    #   ******** 1 Activo ********************
+    # ***** 1.1 Activo Circulante  *****
+
+    #  1.1.1 Disponibilidades (Bienes o Derechos que por su naturaleza se espera convertir  en efectivo,
+    #        antes de 12 meses)
+
+    print("""
+    
+    
+    BALANCE GENERAL: 
+        """)
+    print('Activo Circulante:')
+    caja = int(input('Caja: '))
+    fondo_fijo_de_la_caja_chica = int(input('Fondo fijo de la caja chica: '))
+    fondo_de_oportunidades = int(input('Fondo de oportunidades: '))
+    bancos = int(input('Bancos: '))
+    instrumentos_financieros = int(input('Instrumentos Financieros: '))
+    clientes = int(input('Clientes:'))
+    documentos_por_cobrar = int(input('Documentos por Cobrar: '))
+    deudores = int(input('Deudores: '))
+    funcionarios_y_empleados = int(input('Funcionarios y Empleados: '))
+    iva_acreditable = int(input('Iva Acreditable: '))
+    anticipo_de_impuestos = int(input('Anticipo de Impuestos: '))
+    inventario = int(input('Inventario: '))
+    mercancias_en_transito = int(input('Mercancias de Transito: '))
+    anticipo_a_proveedores = int(input('Anticipo de Proveedores: '))
+    papeleria_y_utiles = int(input('Papeleria y Útiles: '))
+    propaganda_y_publicidad = int(input('Propaganda y Publicidad: '))
+    muestras_medicas_y_papeleria = int(input('Muestras Médicas y Papelería: '))
+    primas_de_seguros_y_fianzas = int(input('Primas de Seguros y Fianzas: '))
+    rentas_pagadas_por_anticipado = int(input('Rentas Pagadas por Anticipado: '))
+    intereses_pagados_por_anticipado = int(input('Intereses Pagados por Anticipado: '))
+
+    total_activo_circulante = caja + fondo_fijo_de_la_caja_chica + fondo_de_oportunidades + bancos + instrumentos_financieros + clientes + documentos_por_cobrar + deudores + funcionarios_y_empleados + iva_acreditable + anticipo_de_impuestos + inventario + mercancias_en_transito + anticipo_a_proveedores + papeleria_y_utiles + propaganda_y_publicidad + muestras_medicas_y_papeleria + primas_de_seguros_y_fianzas + rentas_pagadas_por_anticipado + intereses_pagados_por_anticipado
+    print(f'''
+    Total Activo Circulante:{total_activo_circulante}''')
+
+
+    # ***** 1.2 Activo No-Circulante *****
+    print("Activo No-Circulante:")
+    terrenos = int(input('Terrenos: '))
+    edificios = int(input('Edificios: '))
+    maquinaria = int(input('Maquinaria: '
+                           ''))
+    mobiliario_y_equipo_de_oficina = int(input('maquinaria y Equipo de Oficina: '))
+    muebles_y_enseres = int(input('Muebles y enseres: '))
+    equipo_de_transporte = int(input('Equipo de Transporte: '))
+    equipo_de_entrega_y_reparto = int(input('Equipo de Entrega y Reparto: '))
+    derechos_de_autor = int(input('Derechos de Autor: '))
+    patentes = int(input('Patentes: '))
+    marcas_y_nombres_comerciales = int(input('Marcas y Nombres Comerciales: '))
+    credito_mercantil = int(input('Crédito Mercantil: '))
+    gastos_preoperativos = int(input('Gastos Preoperativos: '))
+    franquicias = int(input('Franquicias: '))
+    gastos_de_constitucion = int(input('Gastos de Constitucion: '))
+    gastos_de_organizacion = int(input('Gastos de Organizacion: '))
+    papeleria_y_utiles_a_largo_plazo = int(input('Papeleria y utiles a largo plazo: '))
+    propaganda_y_publicidad_a_largo_plazo = int(input('Propaganda y Publicidad: '))
+    primas_de_seguros_y_fianzas_a_largo_plazo = int(input('Primas de Seguros Y Fianzas: '))
+    muestras_medicas_y_literatura_a_largo_plazo = int(input('Muestras Medicas y Literatura: '))
+    rentas_pagadas_por_anticipado_a_largo_plazo = int(input('Rentas Pagadas por Anticipado a largo plazo: '))
+    intereses_pagados_por_anticipado_a_largo_plazo = int(input('Intereses Pagados por Anticipado a largo plazo: '))
+    fondo_de_amortizacion_de_obligaciones = int(input('Fondo de Amortizacion de Obligaciones: '))
+    depositos_en_garantia = int(input('Depositos de Garantia: '))
+    inversiones_en_proceso = int(input('Inversiones en Proceso: '))
+    terrenos_no_utilizados = int(input('Terrenos no Utilizados: '))
+    maquinaria_no_utilizada = int(input('Maquinaria no Utilizada: '))
+
+    total_activo_no_circulante = terrenos + edificios + maquinaria  + muebles_y_enseres + equipo_de_transporte + equipo_de_entrega_y_reparto + derechos_de_autor + patentes + marcas_y_nombres_comerciales + credito_mercantil + gastos_preoperativos + franquicias + gastos_de_constitucion + gastos_de_organizacion + papeleria_y_utiles_a_largo_plazo + propaganda_y_publicidad_a_largo_plazo + primas_de_seguros_y_fianzas_a_largo_plazo + muestras_medicas_y_literatura_a_largo_plazo + rentas_pagadas_por_anticipado_a_largo_plazo + intereses_pagados_por_anticipado_a_largo_plazo + fondo_de_amortizacion_de_obligaciones + depositos_en_garantia + inversiones_en_proceso + terrenos_no_utilizados + maquinaria_no_utilizada
+
+    print(f'''    Total Activo No-Circulante: {total_activo_no_circulante} ''')
+
+    total_activo = total_activo_circulante + total_activo_no_circulante
+    print(f'''Total Activo: {total_activo}''')
+    #************* 2. PASIVO ******************
+
+    # ************ 2.1 Pasivo Circulante ************
+
+    print('Pasivo Circulante:  ')
+    proveedores = int(input('Proveedores: '))
+    documentos_por_pagar = int(input('Documentos por Pagar: '))
+    acreedores = int(input('Acreedores: '))
+    acreedores_bancarios = int(input('Acreedores Bancarios: '))
+    anticipos_a_clientes = int(input('Anticipos de Clientes: '))
+    dividendos_por_pagar = int(input('Dividendos por Pagar: '))
+    iva_causado = int(input('IVA Causado: '))
+    impuestos_y_derechos_por_pagar = int(input('Impuestos y Derechos por pagar: '))
+    impuesto_sobre_la_renta_isr_por_pagar = int(input('Impuesto Sobre la Renta (ISR) por pagar: '))
+    participacion_de_los_trabajadores_en_las_utilidades_ptu_por_pagar = int(input('Participacion de los trabajadores en las utilidades (PTU) por pagar: '))
+    rentas_cobradas_por_anticipado = int(input('Rentas cobradas por anticipado: '))
+    intereses_cobrados_por_anticipado = int(input('Intereses cobrados por anticipado: '))
+
+    total_pasivo_circulante = proveedores + documentos_por_pagar + acreedores + acreedores_bancarios + anticipos_a_clientes + dividendos_por_pagar + iva_causado + impuestos_y_derechos_por_pagar + impuesto_sobre_la_renta_isr_por_pagar + participacion_de_los_trabajadores_en_las_utilidades_ptu_por_pagar + rentas_cobradas_por_anticipado + intereses_cobrados_por_anticipado
+
+    print(f'''
+    Total Pasivo Circulante: {total_pasivo_circulante}''')
+
+
+    # ************ 2.2 Pasivo No-Circulante ************
+    print('Pasivo No-Circulante: ')
+    acreedores_hipotecarios_a_largo_plazo = int(input('Acreedores hipotecarios: '))
+    acreedores_bancarios_a_largo_plazo = int(input('Acreedores bancarios: '))
+    documentos_por_pagar_a_largo_plazo = int(input('Documentos por pagar a largo plazo: '))
+    obligacion_en_circulacion = int(input('Obligacion en circulacion: '))
+    rentas_cobradas_por_anticipado_a_largo_plazo = int(input('Rentas cobradas por anticipado a largo plazo: '))
+    intereses_cobrados_por_anticipado_a_largo_plazo = int(input('Intereses cobrados por anticipado: '))
+
+    total_pasivo_no_circulante = acreedores_bancarios_a_largo_plazo + acreedores_bancarios_a_largo_plazo + documentos_por_pagar_a_largo_plazo + obligacion_en_circulacion + rentas_cobradas_por_anticipado_a_largo_plazo + intereses_cobrados_por_anticipado_a_largo_plazo
+    print(f'''
+    Total Pasivo No-Circulante: {total_pasivo_no_circulante} ''')
+
+    total_pasivo = total_pasivo_circulante + total_pasivo_no_circulante
+    print(f'''
+    Total Pasivo: {total_pasivo}''')
+
+    # ************ 3 CAPITAL CONTABLE ************
+
+    #  ***************Capital Social   **************
+    print('Capital Social: ')
+    aportaciones_para_futuros_aumentos_de_capital = int(input('Aportaciones para futuros aumentos de capital: '))
+    prima_en_venta_de_acciones = int(input('Prima en venta de acciones: '))
+    utilidades_integrales_retenidas_incluyendo_las_aplicaciones_a_reservas_de_capital = int(input('Utilidades integrales retenidas, incluyendo las aplicaciones a reservas de capital: '))
+    perdidas_integrales_retenidas_incluyendo_las_aplicaciones_a_reservas_de_capital = int(input('Perdidas integrales retenidas, incluyendo las aplicaciones a reservas de capital: '))
+    perdidas_integrales_acumuladas = int(input('Pérdidas integrales acumuladas: '))
+    exceso_o_insuficiencia_en_la_actualización_del_capital_contable_capital_social = int(input('Exceso o insuficiencia en la actualización del capital contable Capital Social: '))
+
+    total_capital = aportaciones_para_futuros_aumentos_de_capital + prima_en_venta_de_acciones + utilidades_integrales_retenidas_incluyendo_las_aplicaciones_a_reservas_de_capital + perdidas_integrales_retenidas_incluyendo_las_aplicaciones_a_reservas_de_capital + perdidas_integrales_acumuladas + exceso_o_insuficiencia_en_la_actualización_del_capital_contable_capital_social
+
+    print(f'''
+    Capital Total: {total_capital}''')
+
+    total_pasivo_mas_capital = total_pasivo + total_capital
+    print(f'''
+    Total Capital Mas Pasivo: {total_pasivo_mas_capital}''')
+
+
+
+    #--------------------------------------ESTADO DE FLUJO DE EFECTIVO-----------------------------------
+
+    # flujo de_efectivo_operativo
+    print('''
+    ESTADO DE FLUJO DE EFECTIVO: ''')
+    print('''
+Flujo de efectivo operativo: ''')
+    print(f'Utilidad Neta Despues de Impuestos: {utilidad_neta_despues_de_impuestos}')
+    depreciacion = int(input('Depreciacion: '))
+    aumento_en_las_cuentas_por_cobrar = int(input('Aumento en las Cuentas por Cobrar: '))
+    disminucion_de_los_inventarios = int(input('Disminucion de los Inventarios: '))
+    aumento_de_las_cuentas_por_pagar = int(input('Aumento de las Cuentas Por Pagar: '))
+    aumento_de_las_deudas_acumuladas = int(input('Aumento de las Deudas Acumuladas: '))
+    efectivo_proveniente_de_actividades_operativas = depreciacion + aumento_en_las_cuentas_por_cobrar + disminucion_de_los_inventarios + aumento_de_las_cuentas_por_pagar + aumento_de_las_deudas_acumuladas
+print(f'''    Efectivo Proveniente de Actividades Operativas: {efectivo_proveniente_de_actividades_operativas}''')
+
+    #flujo_de_efectivo_de_actividades_de_inversion
+    print('''
+    
+Flujo de Efectivo de Actividades de Inverisón:''')
+    aumento_de_los_activos_fijos_brutos = int(input('Aumento de los activos fijos brutos: '))
+    cambio_en_inversiones_patrimoniales_en_otras_empresas = int(input('Cambio en inversiones patrimoniales en otras empresas: '))
+    otros_flujos_de_efectivo_de_actividades_de_inversion = int(input('Otros Flujos de Efectivo de Actividades de Inversión:'))
+    efectivo_proveniente_de_actividades_de_inversion = aumento_de_los_activos_fijos_brutos + cambio_en_inversiones_patrimoniales_en_otras_empresas
+print(f'''    Efectivo Proveniente de Las Actividades de Inverisón: {efectivo_proveniente_de_actividades_de_inversion}''')
+
+    #flujo_de_efectivo_de_las_actividades_de_financiamiento
+    print('''
+    
+Flujo de Efectivo de Actividades de Financiamiento: ''')
+    disminucion_de_los_documentos_por_pagar = int(input('Disminucion de los documentos por pagar: '))
+    aumento_de_las_deudas_a_largo_plazo = int(input('aumento de las deudas a largo plazo : '))
+    cambios_en_el_patrimonio_de_los_accionistas = int(input('Cambios en el Patrimonio de los Accionistas: '))
+    dividendos_pagados = int(input('Dividendos pagados: '))
+    aumento_neto_del_efectivo_y_los_valores_negociables = int(input('Aumento en las Cuentas por Cobrar: '))
+    otros_flujos_de_efectivo_de_actividades_de_financiamiento = int(input('Otros Flujos de Efectivo de Actividades de Financiamiento: '))
+    efectivo_proveniente_de_actividades_de_financiamiento = disminucion_de_los_documentos_por_pagar + aumento_de_las_deudas_a_largo_plazo + cambios_en_el_patrimonio_de_los_accionistas + dividendos_pagados + aumento_neto_del_efectivo_y_los_valores_negociables + otros_flujos_de_efectivo_de_actividades_de_financiamiento
+    print(f'''
+    Efectivo Proveniente de las Actividades de Financiamiento: {efectivo_proveniente_de_actividades_de_financiamiento}''')
+
+
+
+
+
+
+    #------------------------RAZONES FINANCIERAS ------------------
+
+     print(f'''
+
+RAZONES FINANCIERAS
+''')
+    capital_de_trabajo = total_activo_circulante - total_pasivo_circulante
+    print(f'Capital de Trabajo: {capital_de_trabajo}')
+    print(f'Activo No-Circulante: {total_activo_no_circulante}')
+    print(f'Pasivo No-Circulante: {total_activo_no_circulante}')
+
+    print('''RAZONES SIMPLES''')
+print('Razones Financieras para Analizar el Balance General')
+
+razon_del_circulante_o_del_capital_de_trabajo = total_activo_circulante / total_pasivo_circulante
+print(f'Razon del Circulante o del Capital de Trabajo: {razon_del_circulante_o_del_capital_de_trabajo}')
+
+razon_de_liquidez_o_prueba_del_acido = total_activo / total_activo_circulante
+print(f'Prueba del Ácido: {razon_de_liquidez_o_prueba_del_acido}')
+
+capital_de_trabajo = total_activo_circulante - total_pasivo_circulante
+print(f'Capital de Trabajo: {capital_de_trabajo}')
+
+razon_de_margen_de_seguridad = capital_de_trabajo / total_pasivo_circulante
+print(f'Razon de Margen de Seguridad: {razon_de_margen_de_seguridad}')
+
+razon_de_efectivo_neto_en_cuentas_por_cobrar = clientes / proveedores
+print(f'Razon De Efectivo en Cuentas por Cobrar: {razon_de_efectivo_en_cuentas_por_cobrar}')
+
+activo_fijo_neto = total_activo - total_pasivo
+indice_de_estabilidad = activo_fijo_neto / total_pasivo_no_circulante
+print(f'Indice de Estabilidad: {indice_de_estabilidad}')
+
+capital_contable = total_activo-total_pasivo #we have to check this definition
+print(f'capital_contable: {capital_contable}')
+
+razon_de_proteccion_al_pasivo_total = (total_activo-total_pasivo)/total_pasivo
+print(f'Razon de Proteccion al Pasivo Total: {razon_de_proteccion_al_pasivo_total}')
+
+razon_del_capital_contable_potestativo = utilidades_integrales_retenidas_incluyendo_las_aplicaciones_a_reservas_de_capital / total_capital
+print(f'Razon del Capital Contable Potestativo: {razon_del_capital_contable_potestativo}')
+
+razon_de_suficiencia_de_capital_contable = total_capital / activo_fijo_neto
+print(f'Razon de Suficiencia de Capital Contable: {razon_de_suficiencia_de_capital_contable}')
+
+razon_del_propietario = capital_contable / total_activo
+print(f'Razon del Propietario: {razon_del_propietario}')
+
+razon_de_rentabilidad = utilidad_neta_despues_de_impuestos / capital_contable
+print(f'Razon de Rentabilidad: {razon_de_rentabilidad}')
+
+
+
+#_______________________RAZONES FINANCIERAS PARA ANALIZAR EL ESTADO DE RESULTADOS_____________________
+
+print('''
+
+
+RAZONES SIMPLES''')
+print('Razones Financieras para Analizar el Estado de Resultados')
+
+razon_de_margen_de_utilidad_bruta = utilidad_bruta / ventas # ventas deberian ser ventas netas!!!
+print(f'Razon de Margen de Utilidad Bruta: {razon_de_margen_de_utilidad_bruta}')
+
+activos_operativos = clientes + anticipos_a_clientes + documentos_por_cobrar + deudores + funcionarios_y_empleados + inventario + edificios + terrenos + maquinaria + mobiliario_y_equipo_de_oficina + muebles_y_enseres + equipo_de_transporte + equipo_de_entrega_y_reparto
+print(f'Activos Operativos: {activos_operativos}')
+
+razon_de_rendimineto_del_activo_de_operacion = utilidad_neta_despues_de_impuestos / activos_operativos
+print(f'Razon de Rendimiento del Activo de Operacion: {razon_de_rendimineto_del_activo_de_operacion}')
+
+razon_de_gastos_en_relacion_con_las_ventas = gastos_operativos_totales / ventas #ventas deberian ser netas
+print(f'Razon de Gastos en Relacion con las Ventas: {razon_de_gastos_en_relacion_con_las_ventas} ')
+
+razon_de_costo_de_financiamiento_a_utilidad_neta = gastos_por_intereses / ventas #ventas deberian ser netas
+print(f'Razon de Costo de Financiamiento a Utilidad Neta: ')
+
+tasa_de_impuestos = int(input('Tasa de Impuestos : '))
+
+rotacion_de_activos_totales = ventas / total_activo
+
+#razon_de_rendimineto_del_activo_total deberia incluir ventas netas en lugar de solo ventas
+razon_de_rendimineto_del_activo_total = ((ventas  + gastos_por_intereses) * (1 - tasa_de_impuestos))/ rotacion_de_activos_totales
+
+
+print('Razones Financieras de Formulas de Velocidad')
+
+
+rotacion_de_inventario = ventas/inventario
+
+rotacion_de_los_inventarios = costo_de_los_bienes_vendidos / rotacion_de_inventario
+
+dias_del_año = 360
+
+rotacion_de_inventario_base_dias = dias_del_año / rotacion_de_inventario
+
+promedio_de_ventas_diarias_a_credito = clientes / dias_del_año
+
+rotacion_de_cuentas_por_cobrar_a_clientes = ventas / promedio_de_ventas_diarias_a_credito  #las ventas deberian ser netas
+
+tiempo_en_dias_necesario_para_el_cobro_de_facturas = dias_del_año / rotacion_de_cuentas_por_cobrar_a_clientes
+
+promedio_del_activo_circulante = total_activo_circulante / dias_del_año
+
+rotacion_del_activo_circulante = costo_de_los_bienes_vendidos / promedio_del_activo_circulante
+
+rotacion_de_cuentas_por_pagar = proveedores / proveedores
+
+rotacion_de_cuentas_por_pagar_base_dias = dias_del_año / rotacion_de_cuentas_por_pagar
+
+rotacion_de_capital_de_trabajo =  ventas / capital_de_trabajo
+
+capital_contable_tangible = total_activo_circulante + activo_fijo_neto - total_pasivo_no_circulante #verificar esta razon
+
+razon_de_capital_tangible = ventas / capital_contable #ventas deberian ser ventas netas y capital capital contable tangible
+
+# compras_brutas
+
+rotacion_de_proveedores = compras / proveedores #falta cambiar la cuenta compras(por compras brutas)
+
+rotacion_de_proveedores_2 = ventas / capital_de_trabajo
+
+
+#-------------------------------------------------WARNING WARNING WARNING -----------------------------------
+#---------------------------THIS SECTION WILL STILL BE IN CONSTRUCTION UNTIL FURTHER NOTICE!!! ------------------------
+#-------------------------------------------------WARNING WARNING WARNING -----------------------------------
+#print('Razones Financieras para Analizar el Estado de Fabricacion')
+#
+#proporcion_del_costo_de_produccion_en_relacion_con_ventas = costo_de_lo_producido
+
+
+
+
+
+
+
+
+#-------------------EXCEPTIONS -------------------------------
+except SyntaxError:
+    print("No Dejes Espacios Vacios")
+except ValueError:
+    print("No Dejes Espacios Vacios")
